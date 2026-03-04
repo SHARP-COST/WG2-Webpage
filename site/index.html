@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SHARP WG2 Hadron Spectroscopy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-glow"></div>
+    <p class="lead">COST (European Cooperation in Science and Technology) is a funding framework supporting cross-border scientific collaboration through coordinated research activities and networking.</p>
+    <p class="lead">Working Group 2 focuses on hadron spectroscopy: connecting theory and experiment on conventional and exotic hadrons, improving analysis methods, and sharing expertise across institutions.</p>
+  </header>
+
+  <main>
+    <section class="toolbar">
+      <div id="tag-filters" class="chips"></div>
+      <div id="country-filters" class="chips chips-country"></div>
+    </section>
+
+    <section class="board-wrap">
+      <svg id="links" aria-hidden="true"></svg>
+      <section id="board" class="board"></section>
+    </section>
+  </main>
+
+  <aside id="details" class="details hidden" aria-live="polite"></aside>
+
+  <template id="card-template">
+    <article class="member-card">
+      <div class="badge"></div>
+      <h3 class="name"></h3>
+      <p class="institution"></p>
+      <div class="meta"></div>
+      <div class="tags"></div>
+    </article>
+  </template>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>

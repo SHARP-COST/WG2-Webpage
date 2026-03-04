@@ -1,0 +1,211 @@
+members:
+  -
+    id: "bernardez"
+    name: "Alexandre Salas-Bernardez"
+    institution: ""
+    country_code: "ES"
+    country: "Spain"
+    email: "alexsala@ucm.es"
+    github: ""
+    domain_badge: "A"
+    past_works: "landau-gauge Green’s functions, SU(N) × SU(M) theories, Inverse Amplitude Method"
+    expertise: "Effective field theories, Unitarization techniques, Phenomenology, Resummations in QFTs."
+    current_interests: "Non-pertubative methods for hadron phenomenology, analytic continuations, confinement."
+    expertise_tags: ["amplitude-analysis", "dyson-schwinger", "effective-field-theory"]
+    source_works: ["amplitude-analysis", "dyson-schwinger", "effective-field-theory"]
+    source_file: "members/bernardez.yaml"
+  -
+    id: "torcato"
+    name: "André Torcato"
+    institution: "Bolseiro de Doutoramento em Física"
+    country_code: "PT"
+    country: "Portugal"
+    email: "torcatoandre@gmail.com"
+    github: ""
+    domain_badge: "D"
+    past_works: ""
+    expertise: ""
+    current_interests: "I'm interested in studying baryons using functional methods. Specifically, solving the baryon's Bethe-Salpeter equation using a quark-diquark model to simplify it to a 2-body system. With this, not only is it possible to calculate baryon masses, but diquark correlations as well. My focus is to predict the diquark correlations of baryons with quarks of different flavors."
+    expertise_tags: ["dyson-schwinger", "heavy-hadrons"]
+    source_works: ["dyson-schwinger", "heavy-hadrons"]
+    source_file: "members/torcato.yaml"
+  -
+    id: "estrada"
+    name: "Felipe Llanes-Estrada"
+    institution: "Depto. Física Teórica, Madrid, Spain"
+    country_code: "ES"
+    country: "Spain"
+    email: "fllanes@ucm.es"
+    github: ""
+    domain_badge: "A"
+    past_works: "quark-gluon field theory approaches to exotics, dispersion relations at the hadron level,"
+    expertise: "generalist. I am not very specialized."
+    current_interests: "trying to pass from Landau-gauge Green's functions in Dyson-Schwinger"
+    expertise_tags: ["amplitude-analysis", "dyson-schwinger", "exotics"]
+    source_works: ["amplitude-analysis", "dyson-schwinger", "exotics"]
+    source_file: "members/estrada.yaml"
+  -
+    id: "eichmann"
+    name: "Gernot Eichmann"
+    institution: "University of Tartu, University of Lisbon"
+    country_code: "AT"
+    country: "Austria"
+    email: "gernot.eichmann@uni-graz.at"
+    github: "GernotE"
+    domain_badge: "D"
+    past_works: "Light-baryon spectroscopy, form factors and structure; tetraquarks; hadronic light-by-light scattering; QCD's n-point functions"
+    expertise: "Nonperturbative QCD, functional methods, hadron spectroscopy and structure"
+    current_interests: "Exotic hadrons and 4-, 5-, 6-quark states, light and heavy baryons, muon g-2, QCD at finite temperature and density"
+    expertise_tags: ["dyson-schwinger", "exotics", "heavy-hadrons"]
+    source_works: ["dyson-schwinger", "exotics", "heavy-hadrons"]
+    source_file: "members/eichmann.yaml"
+  -
+    id: "sedovia"
+    name: "Jorge Segovia"
+    institution: "Universidad Pablo de Olavide, de Sevilla"
+    country_code: "ES"
+    country: "Spain"
+    email: "jsegovia@upo.es"
+    github: ""
+    domain_badge: "D"
+    past_works: "Spectroscopy, reactions and decay modes of conventional and exotic hadrons, mostly with heavy quark content."
+    expertise: "Phenomenological constituent quark models, Dyson-Schwinger equations and (Non-relativistic) Effective Field Theories."
+    current_interests: "Spectroscopy and Structure of conventional and exotic hadrons, mostly with heavy quark content."
+    expertise_tags: ["dyson-schwinger", "effective-field-theory", "exotics", "heavy-hadrons"]
+    source_works: ["dyson-schwinger", "effective-field-theory", "exotics", "heavy-hadrons"]
+    source_file: "members/sedovia.yaml"
+  -
+    id: "pelaez"
+    name: "José Ramón Pelaez"
+    institution: "Complutense University of Madrid"
+    country_code: "ES"
+    country: "Spain"
+    email: "jrpelaez@ucm.es"
+    github: ""
+    domain_badge: "A"
+    past_works: "Light mesons resonances and meson-meson scattering (Unitarized ChPT, Light scalars), CP violation in B decays, Femtoscopy@ALICE"
+    expertise: "Meson spectroscopy, dispersion theory,  final-state interactions."
+    current_interests: "Dispersion relations and resonance poles, CP violation in shameless B decays, tests of femtoscopy formalism."
+    expertise_tags: ["amplitude-analysis", "effective-field-theory", "experiment", "light-hadrons"]
+    source_works: ["amplitude-analysis", "effective-field-theory", "experiment", "light-hadrons"]
+    source_file: "members/pelaez.yaml"
+  -
+    id: "bartl"
+    name: "Martin Bartl"
+    institution: "Max Planck Institute Munich"
+    country_code: "DE"
+    country: "Germany"
+    email: "bartl@mpp.mpg.de"
+    github: "MartinBartl"
+    domain_badge: "A"
+    past_works: "Light meson spectroscopy at COMPASS, focus on the rho(770) and excited rho states using a freed-isobar partial-wave analysis"
+    expertise: "partial-wave analysis, freed-isobar partial-wave analysis, resonance models and line shapes"
+    current_interests: "Heavy meson spectroscopy with exotic tetra quark states at Belle II"
+    expertise_tags: ["amplitude-analysis", "exotics", "experiment", "heavy-hadrons", "light-hadrons"]
+    source_works: ["amplitude-analysis", "exotics", "experiment", "heavy-hadrons", "light-hadrons"]
+    source_file: "members/bartl.yaml"
+  -
+    id: "oliveira"
+    name: "Orlando Oliveira"
+    institution: "University of Coimbra, Portugal"
+    country_code: "PT"
+    country: "Portugal"
+    email: "orlando@uc.pt"
+    github: ""
+    domain_badge: "D"
+    past_works: "Landau gauge for lattice QCD, gluon propagator, Gribov copies."
+    expertise: "non-perturbative approaches to QFT"
+    current_interests: "investigation of fundamental Green functions using lattice QCD methods."
+    expertise_tags: ["dyson-schwinger", "lattice-qcd"]
+    source_works: ["dyson-schwinger", "lattice-qcd"]
+    source_file: "members/oliveira.yaml"
+  -
+    id: "ortega"
+    name: "Pablo G. Ortega"
+    institution: "University of Salamanca"
+    country_code: "ES"
+    country: "Spain"
+    email: "pgortega@usal.es"
+    github: "pgortega"
+    domain_badge: "A"
+    past_works: "Heavy meson and baryon spectroscopy, including penta and tetraquark-like states, using constituent quark models and EFT. Some calculations with perturbative QCD."
+    expertise: "Quark models, hadronic reaction models, amplitude analysis."
+    current_interests: "Heavy and light-flavor exotic hadrons at LHCb, perturbative QCD."
+    expertise_tags: ["amplitude-analysis", "exotics", "experiment", "heavy-hadrons"]
+    source_works: ["amplitude-analysis", "exotics", "experiment", "heavy-hadrons"]
+    source_file: "members/ortega.yaml"
+  -
+    id: "raban"
+    name: "Pablo Raban"
+    institution: "Universidad Complutense de Madrid"
+    country_code: "ES"
+    country: "Spain"
+    email: "praban@ucm.es"
+    github: ""
+    domain_badge: "A"
+    past_works: "Dispersive analysis of pion-pion scattering and resonance determination."
+    expertise: "Amplitude analysis, dispersion relations, analytic continuations."
+    current_interests: "Flavor symmetry, pion-nucleon spectroscopy, Lattice QCD."
+    expertise_tags: ["amplitude-analysis", "lattice-qcd", "light-hadrons"]
+    source_works: ["amplitude-analysis", "lattice-qcd", "light-hadrons"]
+    source_file: "members/raban.yaml"
+  -
+    id: "groote"
+    name: "Stefan Groote"
+    institution: "University of Tartu, University of Lisbon"
+    country_code: "EE"
+    country: "Estonia"
+    email: "stefan.groote@ut.ee"
+    github: ""
+    domain_badge: "E"
+    past_works: "topological tensor invariants and current algebra approach for nonleptonic two-body decays of single and double charm baryons."
+    expertise: "Heavy Quark Effective Theory (HQET), current algebra approach,"
+    current_interests: "baryonic bounded states, CP violation in baryonic decays"
+    expertise_tags: ["effective-field-theory", "heavy-hadrons"]
+    source_works: ["effective-field-theory", "heavy-hadrons"]
+    source_file: "members/groote.yaml"
+  -
+    id: "wallner"
+    name: "Stefan Wallner"
+    institution: "Max Planck Institut for Physics"
+    country_code: "DE"
+    country: "Germany"
+    email: "stefan.wallner@cern.ch"
+    github: "stefan-wallner"
+    domain_badge: "A"
+    past_works: "Light-meson spectroscopy at COMPASS (strange mesons, non-strange light mesons, hybrid meson π(1600)) and Belle II (hadronic tau-lepton decays, B-meson decays)."
+    expertise: "Amplitude analysis, partial-wave analysis of multi-body final states."
+    current_interests: "Hadronic tau-lepton decays at Belle II."
+    expertise_tags: ["amplitude-analysis", "exotics", "experiment", "light-hadrons"]
+    source_works: ["amplitude-analysis", "exotics", "experiment", "light-hadrons"]
+    source_file: "members/wallner.yaml"
+  -
+    id: "akan"
+    name: "Tarik Akan"
+    institution: "Yozgat Bozok Üniversitesi"
+    country_code: "TR"
+    country: "Turkey"
+    email: "tarik.akan@bozok.edu.tr"
+    github: "tarikakan"
+    domain_badge: "X"
+    past_works: "hadron spectroscopy, with particular emphasis on heavy and heavy-light hadrons, including conventional and exotic states."
+    expertise: "non-perturbative QCD methods, especially QCD sum rules, to study hadron masses, couplings"
+    current_interests: "combining numerical/Monte Carlo methods with machine learning techniques to improve stability analyses and parameter extraction in hadron phenomenology."
+    expertise_tags: ["exotics", "heavy-hadrons", "machine-learning", "qcd-sum-rules"]
+    source_works: ["exotics", "heavy-hadrons", "machine-learning", "qcd-sum-rules"]
+    source_file: "members/akan.yaml"
+  -
+    id: "pena"
+    name: "Teresa Peña"
+    institution: "Instituto Superior Técnico"
+    country_code: "PT"
+    country: "Portugal"
+    email: "teresa.pena@tecnico.ulisboa.pt"
+    github: "TeresaPenaStadler"
+    domain_badge: "A"
+    past_works: "Light- and Heavy-meson spectroscopy calculations; heavy-baryon spectroscopy; Bethe-Salpeter pentaquark calculations; timelike and spacelike baryon electromagnetic transition form factors"
+    expertise: "Lorentz- invariant integral equations for scattering amplitudes; connections between spacetime and timelike amplitudes; electromagnetic probes of baryon structure."
+    current_interests: "Coupled Dyson- Schwinger and Bethe-Salpeter approach to Mesons and Baryons; present-day enigma of the structure of exotic multiquark structures"
+    expertise_tags: ["amplitude-analysis", "exotics", "heavy-hadrons"]
+    source_works: ["amplitude-analysis", "exotics", "heavy-hadrons"]
+    source_file: "members/pena.yaml"
