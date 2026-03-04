@@ -101,7 +101,7 @@ function renderCards(items) {
     node.querySelector(".badge").textContent = member.domain_badge || "?";
     node.querySelector(".name").textContent = member.name;
     node.querySelector(".institution").textContent = member.institution || "Institution not set";
-    node.querySelector(".meta").textContent = `${member.country_code || "UN"} · ${member.email || "email missing"}`;
+    node.querySelector(".meta").textContent = `${member.country_code || "UN"} · ${member.country || "Unknown"}`;
 
     const tagsEl = node.querySelector(".tags");
     (member.expertise_tags || []).forEach((tag) => {
