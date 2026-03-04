@@ -1,6 +1,5 @@
 const board = document.getElementById("board");
 const details = document.getElementById("details");
-const linksSvg = document.getElementById("links");
 const tpl = document.getElementById("card-template");
 const tagFilters = document.getElementById("tag-filters");
 const countryFilters = document.getElementById("country-filters");
@@ -35,14 +34,6 @@ let members = [];
 let activeTag = "";
 let activeCountry = "";
 let selectedId = "";
-
-function sharedScore(a, b) {
-  const sa = new Set(a.expertise_tags || []);
-  const sb = new Set(b.expertise_tags || []);
-  let score = 0;
-  for (const t of sa) if (sb.has(t)) score += 1;
-  return score;
-}
 
 function unique(list) {
   return [...new Set(list)].sort((a, b) => a.localeCompare(b));
@@ -83,7 +74,7 @@ function renderFilters() {
   });
 }
 
-function renderDetails(member, connected) {
+function renderDetails(member) {
   if (!member) {
     details.classList.add("hidden");
     details.innerHTML = "";
@@ -97,45 +88,7 @@ function renderDetails(member, connected) {
     <p><strong>Expertise:</strong> ${member.expertise || "Not provided"}</p>
     <p><strong>Past work:</strong> ${member.past_works || "Not provided"}</p>
     <p><strong>Current interests:</strong> ${member.current_interests || "Not provided"}</p>
-    <p class="list"><strong>Connected members:</strong> ${connected.map((c) => c.name).join(", ") || "none"}</p>
   `;
-}
-
-function drawLinks(items, selected) {
-  const rect = board.getBoundingClientRect();
-  linksSvg.setAttribute("viewBox", `0 0 ${Math.max(1, rect.width)} ${Math.max(1, rect.height)}`);
-  linksSvg.innerHTML = "";
-  if (!selected) return;
-
-  const selectedEl = board.querySelector(`[data-id="${selected.id}"]`);
-  if (!selectedEl) return;
-
-  const sa = selectedEl.getBoundingClientRect();
-  const x1 = sa.left + sa.width / 2 - rect.left;
-  const y1 = sa.top + sa.height / 2 - rect.top;
-
-  for (const member of items) {
-    if (member.id === selected.id) continue;
-    const score = sharedScore(selected, member);
-    if (score <= 0) continue;
-
-    const el = board.querySelector(`[data-id="${member.id}"]`);
-    if (!el) continue;
-
-    const mb = el.getBoundingClientRect();
-    const x2 = mb.left + mb.width / 2 - rect.left;
-    const y2 = mb.top + mb.height / 2 - rect.top;
-
-    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    line.setAttribute("x1", String(x1));
-    line.setAttribute("y1", String(y1));
-    line.setAttribute("x2", String(x2));
-    line.setAttribute("y2", String(y2));
-    line.setAttribute("stroke", "#1f6d8f");
-    line.setAttribute("stroke-opacity", String(Math.min(0.9, 0.24 + score * 0.18)));
-    line.setAttribute("stroke-width", String(0.6 + score * 0.7));
-    linksSvg.appendChild(line);
-  }
 }
 
 function renderCards(items) {
@@ -159,10 +112,6 @@ function renderCards(items) {
       tagsEl.appendChild(span);
     });
 
-    if (selectedId && selectedId !== member.id) {
-      const selected = items.find((m) => m.id === selectedId);
-      if (selected && sharedScore(selected, member) === 0) node.classList.add("dimmed");
-    }
     if (selectedId === member.id) node.classList.add("selected");
 
     node.addEventListener("click", () => {
@@ -180,10 +129,7 @@ function render() {
   renderCards(items);
 
   const selected = items.find((m) => m.id === selectedId);
-  const connected = selected ? items.filter((m) => m.id !== selected.id && sharedScore(selected, m) > 0) : [];
-
-  renderDetails(selected, connected);
-  requestAnimationFrame(() => drawLinks(items, selected));
+  renderDetails(selected);
 }
 
 async function init() {
@@ -191,11 +137,6 @@ async function init() {
   const payload = await response.json();
   members = payload.members || [];
   render();
-  window.addEventListener("resize", () => {
-    const items = filteredMembers();
-    const selected = items.find((m) => m.id === selectedId);
-    drawLinks(items, selected);
-  });
 }
 
 init().catch((err) => {
