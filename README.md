@@ -4,9 +4,9 @@ Public webpage repository for SHARP WG2 Hadron Spectroscopy members.
 
 ## Source Of Truth
 
-Member profiles live in the private repository:
+Member profiles live in a private source repository as separate files:
 
-- `/Users/mikhailmikhasenko/Documents/SHARP.CAT/WG2-Hadron-Spectroscopy/members/*.yaml`
+- `members/*.yaml`
 
 This public repository stores only combined synchronized data:
 
@@ -21,11 +21,13 @@ Run locally from this repository root:
 python3 scripts/sync_members.py
 ```
 
-Optional override for source folder:
+Configure source folder with env var:
 
 ```bash
 WG2_SOURCE_MEMBERS=/absolute/path/to/private-repo/members python3 scripts/sync_members.py
 ```
+
+If `WG2_SOURCE_MEMBERS` is not set, the script uses its default relative source path.
 
 ## Local Build
 
