@@ -73,7 +73,7 @@
     {
       "id": "eichmann",
       "name": "Gernot Eichmann",
-      "institution": "University of Tartu, University of Lisbon",
+      "institution": "University of Graz",
       "country_code": "AT",
       "country": "Austria",
       "email": "gernot.eichmann@uni-graz.at",
@@ -245,6 +245,34 @@
         "light-hadrons"
       ],
       "source_file": "members/raban.yaml"
+    },
+    {
+      "id": "sultanov",
+      "name": "Roman Sultanov",
+      "institution": "Uppsala University",
+      "country_code": "SE",
+      "country": "Sweden",
+      "email": "roman.sultanov@physics.uu.se",
+      "github": "RomanPhysics",
+      "domain_badge": "X",
+      "past_works": "CPV studies in sequential and multi-body baryon decays (bachelor's and master's).",
+      "expertise": "Amplitude modelling (baryon decays) and CPV.",
+      "current_interests": "Amplitude analysis of charm baryon decays at Belle II, including resonance spectroscopy and CPV.",
+      "expertise_tags": [
+        "amplitude-analysis",
+        "baryon-decays",
+        "charm-physics",
+        "cp-violation",
+        "spectroscopy"
+      ],
+      "source_works": [
+        "amplitude-analysis",
+        "baryon-decays",
+        "charm-physics",
+        "cp-violation",
+        "spectroscopy"
+      ],
+      "source_file": "members/sultanov.yaml"
     },
     {
       "id": "groote",

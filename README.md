@@ -29,6 +29,42 @@ WG2_SOURCE_MEMBERS=/absolute/path/to/private-repo/members python3 scripts/sync_m
 
 If `WG2_SOURCE_MEMBERS` is not set, the script uses its default relative source path.
 
+## Reproducible Update Round
+
+Use the helper script to always build from a clean sandbox checkout of one exact source commit.
+
+```bash
+bash scripts/update_round.sh
+```
+
+Optional arguments:
+
+```bash
+bash scripts/update_round.sh /absolute/or/remote/path/to/WG2-Hadron-Spectroscopy main
+```
+
+What this does:
+1. Clones `WG2-Hadron-Spectroscopy` into `/tmp/wg2-source-sandbox-*`.
+2. Pins one source commit and uses only `members/` from that checkout.
+3. Builds `data/members.yaml`, `data/members.json`, and copies them into `site/data/`.
+4. Prints SHA256 checksums for reproducibility records.
+
+Recommended before commit:
+
+```bash
+git diff -- data/members.yaml data/members.json site/data/members.yaml site/data/members.json
+```
+
+If there are changes, commit those generated files together with any workflow/doc updates.
+
+## Health Check
+
+Run the same consistency checks used in CI:
+
+```bash
+python3 scripts/check_health.py
+```
+
 ## Local Build
 
 ```bash
