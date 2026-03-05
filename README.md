@@ -1,4 +1,6 @@
 # WG2 HP Web
+[![Project Checks](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/checks.yml)
+[![Build and Deploy WG2 Members Site](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/site.yml/badge.svg?branch=main)](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/site.yml)
 
 Public webpage repository for SHARP WG2 Hadron Spectroscopy members.
 
@@ -79,3 +81,4 @@ This will:
 ## Deployment
 
 GitHub Actions workflow `.github/workflows/site.yml` deploys the content of `site/` to GitHub Pages.
+Deployment job is opt-in and only runs when repository variable `ENABLE_PAGES_DEPLOY=true`.
