@@ -18,6 +18,7 @@ When a member confirms or replaces the prefill, update their text and remove `pr
 source links may be retained. Do not infer current interests from an old publication alone.
 
 - `site/`: static HTML, CSS, and JavaScript.
+- `site/assets/`: original SHARP logo and symbol from the Organization repository; the theme uses their navy, blue, green, and red palette.
 - `data/members.yaml`: the only committed public member dataset.
 - `scripts/sync_members.py`: explicit local import from the authoritative roster.
 - `scripts/build_site.py`: builds `dist/` from public data, without private repository access.
