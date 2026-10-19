@@ -8,8 +8,21 @@ import yaml
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from member_data import public_email, validate, load, save
 import sync_members
+from build_site import build_payload
 
 class PrivacyTests(unittest.TestCase):
+    def test_profile_links_follow_actual_filenames(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            save(load(), root)
+            path = next((root / 'data/members').glob('*.yaml'))
+            member_id = yaml.safe_load(path.read_text())['id']
+            path.rename(path.with_name('renamed-profile.yaml'))
+            result = build_payload(root)
+            member = next(m for m in result['members'] if m['id'] == member_id)
+            self.assertEqual(member['profile_path'], 'data/members/renamed-profile.yaml')
+            self.assertNotIn('profile_path', next(m for m in load(root)['members'] if m['id'] == member_id))
+
     def test_private_and_unreviewed_domains_are_omitted(self):
         for domain in ['gmail.com', 'outlook.com', 'unknown.example', 'rub.de.attacker.example']:
             self.assertEqual(public_email('test' + '@' + domain), '')

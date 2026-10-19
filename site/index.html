@@ -10,6 +10,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <script>
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem('wg2-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch { document.documentElement.dataset.theme = 'light'; }
+  </script>
 </head>
 <body>
   <header class="hero">
@@ -20,6 +25,14 @@
         <a class="cost-link" href="https://www.cost.eu/actions/CA24159/" aria-label="COST Action CA24159 — SHARP">
           <img src="./assets/cost-logo.svg" width="1366" height="564" alt="COST">
         </a>
+        <div class="header-tools">
+          <button id="theme-toggle" class="icon-button" type="button" aria-label="Dark mode" aria-pressed="false" title="Toggle dark mode">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
+          </button>
+          <a class="icon-button" href="https://github.com/SHARP-COST/WG2-Webpage" aria-label="Website repository on GitHub" title="Website repository on GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="github-icon"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.77-.24.77-.54v-2.1c-3.13.68-3.79-1.33-3.79-1.33-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.72 1.16 1.72 1.16 1 1.72 2.62 1.22 3.26.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.57 0-1.23.44-2.24 1.16-3.03-.12-.28-.5-1.43.11-2.99 0 0 .95-.3 3.08 1.15a10.7 10.7 0 0 1 5.6 0c2.14-1.45 3.08-1.15 3.08-1.15.61 1.56.23 2.71.11 2.99.72.79 1.15 1.8 1.15 3.03 0 4.33-2.63 5.29-5.14 5.57.4.35.76 1.03.76 2.08v3.1c0 .3.2.65.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg>
+          </a>
+        </div>
         <nav class="internal-links" aria-label="Internal repositories">
           <a href="https://github.com/SHARP-COST/WG2-Webpage">WG2 (internal)</a>
           <a href="https://github.com/SHARP-COST/Organization">COST (internal)</a>

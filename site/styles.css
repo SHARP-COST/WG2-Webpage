@@ -111,3 +111,23 @@ main { max-width: 1100px; margin: 0 auto; padding: 0.2rem 1rem 2rem; }
   color: #e4f6ed;
   font-size: .9rem;
 }
+
+.header-tools { display: flex; align-items: center; gap: .6rem; }
+.icon-button { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 32px; padding: 6px; border: 1px solid var(--line); border-radius: 7px; background: transparent; color: var(--muted); cursor: pointer; }
+.icon-button svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.icon-button .github-icon { fill: currentColor; stroke: none; }
+.icon-button:hover { color: var(--accent-a); background: var(--bg); }
+.icon-button:focus-visible { outline: 2px solid var(--accent-a); outline-offset: 3px; }
+.details-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.profile-edit { flex-shrink: 0; border-color: #69647d; }
+.details .profile-edit:hover { background: #37314f; color: white; }
+[data-theme="dark"] { color-scheme: dark; --bg: #12111c; --paper: #201d2d; --ink: #f0edf8; --muted: #b9b4cb; --line: #423b55; --accent-a: #82c7ff; --accent-b: #71d7a1; }
+[data-theme="dark"] body { background: var(--bg); }
+[data-theme="dark"] .brand-logo { background: white; border-radius: 6px; }
+[data-theme="dark"] .cost-link img { filter: brightness(0) invert(1); }
+[data-theme="dark"] .board-wrap { background: var(--paper); }
+[data-theme="dark"] .chip { color: var(--ink); }
+[data-theme="dark"] .chip.active { color: #111b28; }
+[data-theme="dark"] .meta { color: var(--muted); }
+[data-theme="dark"] .details { background: #201d2d; border: 1px solid var(--line); }
+#member-search { color: var(--ink); }

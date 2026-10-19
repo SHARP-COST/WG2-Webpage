@@ -1,3 +1,15 @@
+const themeToggle = document.getElementById("theme-toggle");
+function syncThemeControl() {
+  themeToggle.setAttribute("aria-pressed", String(document.documentElement.dataset.theme === "dark"));
+}
+syncThemeControl();
+themeToggle.addEventListener("click", () => {
+  const theme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = theme;
+  try { localStorage.setItem("wg2-theme", theme); } catch { /* Theme still works without storage. */ }
+  syncThemeControl();
+});
+
 const board = document.getElementById("board");
 const details = document.getElementById("details");
 const tpl = document.getElementById("card-template");
@@ -93,10 +105,16 @@ function renderDetails(member) {
     return;
   }
 
+  const profileUrl = member.profile_path
+    ? "https://github.com/SHARP-COST/WG2-Webpage/blob/main/" + member.profile_path.split("/").map(encodeURIComponent).join("/")
+    : "";
   member = Object.fromEntries(Object.entries(member).map(([key, value]) => [key, typeof value === "string" ? escapeHTML(value) : value]));
   details.classList.remove("hidden");
   details.innerHTML = `
-    <h3>${member.name}</h3>
+    <div class="details-heading">
+      <h3>${member.name}</h3>
+      ${profileUrl ? `<a class="icon-button profile-edit" href="${escapeHTML(profileUrl)}" target="_blank" rel="noopener noreferrer" aria-label="View YAML profile for ${member.name} on GitHub" title="Edit profile on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m16 3 5 5-12 12-6 1 1-6Z M14 5l5 5"/></svg></a>` : ""}
+    </div>
     <p>${member.institution}${member.country ? " · " + member.country : ""}</p>
     ${member.email ? `<p><strong>Work email:</strong> ${member.email}</p>` : ""}
     ${member.profile_prefill ? `<p class="prefill-note">Research prefill · awaiting member review. Sources checked ${escapeHTML(member.profile_prefill.researched_on)}.</p>` : ""}

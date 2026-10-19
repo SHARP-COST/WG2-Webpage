@@ -2,10 +2,12 @@
 """Check the public roster, generated bundle and repository for email leaks."""
 import json
 import subprocess
-from member_data import ROOT, RAW_EMAIL, PERSONAL, load
+from member_data import ROOT, RAW_EMAIL, PERSONAL
+
+from build_site import build_payload
 
 def main():
-    payload = load()
+    payload = build_payload()
     paths = subprocess.check_output(['git', 'ls-files', '--cached', '--others', '--exclude-standard', '-z'], cwd=ROOT).decode().split('\0')
     paths += [str(p.relative_to(ROOT)) for p in (ROOT / 'dist').rglob('*') if p.is_file()]
     for relative in paths:
