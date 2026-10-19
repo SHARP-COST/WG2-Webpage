@@ -1,84 +1,56 @@
-# WG2 HP Web
-[![Project Checks](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/checks.yml/badge.svg?branch=main)](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/checks.yml)
-[![Build and Deploy WG2 Members Site](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/site.yml/badge.svg?branch=main)](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/site.yml)
+# SHARP WG2 Webpage
 
-Public webpage repository for SHARP WG2 Hadron Spectroscopy members.
+[Website](https://sharp-cost.github.io/WG2-Webpage/) · [Deployment](https://github.com/SHARP-COST/WG2-Webpage/actions/workflows/site.yml)
 
-## Source Of Truth
+Public directory of SHARP WG2 Hadron Spectroscopy members.
 
-Member profiles live in a private source repository as separate files:
+## Data and architecture
 
-- `members/*.yaml`
+The authoritative membership roster is `WG2.list` in the WG2-Hadron-Spectroscopy repository.
+`data/members.yaml` is this website's sanitized public snapshot, enriched with existing research profiles.
+Names, affiliations, and contacts are refreshed from the roster. Research descriptions, GitHub handles,
+and known countries are preserved for matching members. Missing research details and countries remain blank.
 
-This public repository stores only combined synchronized data:
+- `site/`: static HTML, CSS, and JavaScript.
+- `data/members.yaml`: the only committed public member dataset.
+- `scripts/sync_members.py`: explicit local import from the authoritative roster.
+- `scripts/build_site.py`: builds `dist/` from public data, without private repository access.
+- `scripts/check_health.py`: checks data, bundle consistency, and email privacy.
+- `tests/`: import and privacy regression checks.
 
-- `data/members.yaml`
-- `data/members.json`
+Generated JSON and `dist/` are not committed. The site fetches generated JSON at runtime.
 
-## Synchronization
-
-Run locally from this repository root:
-
-```bash
-python3 scripts/sync_members.py
-```
-
-Configure source folder with env var:
+## Update members
 
 ```bash
-WG2_SOURCE_MEMBERS=/absolute/path/to/private-repo/members python3 scripts/sync_members.py
+python3 -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
+python scripts/sync_members.py ../WG2-Hadron-Spectroscopy/WG2.list
+python scripts/build_site.py
+python scripts/check_health.py
+python -m unittest discover -s tests
 ```
 
-If `WG2_SOURCE_MEMBERS` is not set, the script uses its default relative source path.
+The importer reads only the roster above `## Emails`. It updates roster fields, adds new members,
+and removes people absent from the roster. Review changes to `data/members.yaml` before committing.
+For an import from a clean source checkout, use `bash scripts/update_round.sh [source-repository] [branch]`.
 
-## Reproducible Update Round
+## Contact privacy
 
-Use the helper script to always build from a clean sandbox checkout of one exact source commit.
+Only explicitly reviewed institutional domains in `scripts/member_data.py` are published.
+Personal-provider and unreviewed addresses are omitted, never copied into this repository.
+Retained contacts use `local (at) institution.domain`; neither the data nor the page includes a raw
+address or a `mailto:` link. To publish a new institutional domain, review and add it to the allowlist.
+Historical Git commits are unchanged.
+
+## Preview and deploy
 
 ```bash
-bash scripts/update_round.sh
+python scripts/build_site.py
+python -m http.server 8000 --directory dist
 ```
 
-Optional arguments:
-
-```bash
-bash scripts/update_round.sh /absolute/or/remote/path/to/WG2-Hadron-Spectroscopy main
-```
-
-What this does:
-1. Clones `WG2-Hadron-Spectroscopy` into `/tmp/wg2-source-sandbox-*`.
-2. Pins one source commit and uses only `members/` from that checkout.
-3. Builds `data/members.yaml`, `data/members.json`, and copies them into `site/data/`.
-4. Prints SHA256 checksums for reproducibility records.
-
-Recommended before commit:
-
-```bash
-git diff -- data/members.yaml data/members.json site/data/members.yaml site/data/members.json
-```
-
-If there are changes, commit those generated files together with any workflow/doc updates.
-
-## Health Check
-
-Run the same consistency checks used in CI:
-
-```bash
-python3 scripts/check_health.py
-```
-
-## Local Build
-
-```bash
-python3 scripts/build_site.py
-```
-
-This will:
-1. Sync member YAML files from the private repository.
-2. Generate combined `data/members.yaml` and `data/members.json`.
-3. Copy data into `site/data/` for static hosting.
-
-## Deployment
-
-GitHub Actions workflow `.github/workflows/site.yml` deploys the content of `site/` to GitHub Pages.
-Deployment job is opt-in and only runs when repository variable `ENABLE_PAGES_DEPLOY=true`.
+Open http://localhost:8000. GitHub Actions runs validation and builds on pull requests.
+Pushes to `main` deploy the validated `dist/` artifact to GitHub Pages, configured with GitHub Actions as its source.
+No private repository credentials are needed by deployment.

@@ -1,25 +1,18 @@
 #!/usr/bin/env python3
-from __future__ import annotations
-
+"""Build public files without access to the private source repository."""
+import json
 import shutil
-from pathlib import Path
+from member_data import ROOT, load
 
-ROOT = Path(__file__).resolve().parents[1]
-SITE_DATA = ROOT / "site" / "data"
+def main():
+    payload = load()
+    output = ROOT / 'dist'
+    if output.exists():
+        shutil.rmtree(output)
+    shutil.copytree(ROOT / 'site', output)
+    (output / 'data').mkdir()
+    (output / 'data/members.json').write_text(json.dumps(payload, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    print(f"Built {len(payload['members'])} profiles in dist/")
 
-
-def main() -> None:
-    from sync_members import main as sync_main
-
-    sync_main()
-
-    SITE_DATA.mkdir(parents=True, exist_ok=True)
-    for f in ["members.yaml", "members.json"]:
-        src = ROOT / "data" / f
-        dst = SITE_DATA / f
-        shutil.copy2(src, dst)
-        print(f"Copied {src} -> {dst}")
-
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

@@ -12,12 +12,16 @@
 <body>
   <header class="hero">
     <div class="hero-glow"></div>
+    <h1>SHARP WG2 · Hadron Spectroscopy</h1>
     <p class="lead">COST (European Cooperation in Science and Technology) is a funding framework supporting cross-border scientific collaboration through coordinated research activities and networking.</p>
     <p class="lead">Working Group 2 focuses on hadron spectroscopy: connecting theory and experiment on conventional and exotic hadrons, improving analysis methods, and sharing expertise across institutions.</p>
   </header>
 
   <main>
-    <section class="toolbar">
+    <section class="toolbar" aria-label="Member filters">
+      <label for="member-search">Find a member or institution</label>
+      <input id="member-search" type="search" placeholder="Search members…">
+      <p id="member-count" role="status"></p>
       <div id="tag-filters" class="chips"></div>
       <div id="country-filters" class="chips chips-country"></div>
     </section>

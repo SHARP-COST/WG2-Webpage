@@ -73,3 +73,8 @@ main { max-width: 1100px; margin: 0 auto; padding: 0.2rem 1rem 2rem; }
   .board { grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
   .lead { font-size: 0.94rem; }
 }
+
+#member-search { width: 100%; padding: .7rem; border: 1px solid var(--line); border-radius: 8px; font: inherit; background: var(--paper); }
+#member-count { margin: .2rem 0; color: var(--muted); }
+.member-card:focus-visible { outline: 3px solid var(--accent-a); outline-offset: 3px; }
+.details { overflow-wrap: anywhere; }

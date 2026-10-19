@@ -34,6 +34,17 @@ let members = [];
 let activeTag = "";
 let activeCountry = "";
 let selectedId = "";
+let query = "";
+const search = document.getElementById("member-search");
+const count = document.getElementById("member-count");
+search.addEventListener("input", () => {
+  query = search.value.trim().toLocaleLowerCase();
+  selectedId = "";
+  render();
+});
+function escapeHTML(value) {
+  return String(value).replace(/[&<>"']/g, c => ({"&":"&amp;", "<":"&lt;", ">":"&gt;", '"':"&quot;", "'":"&#39;"}[c]));
+}
 
 function unique(list) {
   return [...new Set(list)].sort((a, b) => a.localeCompare(b));
@@ -43,13 +54,14 @@ function filteredMembers() {
   return members.filter((m) => {
     const tagOk = !activeTag || (m.expertise_tags || []).includes(activeTag);
     const countryOk = !activeCountry || m.country_code === activeCountry;
-    return tagOk && countryOk;
+    const searchOk = !query || `${m.name} ${m.institution}`.toLocaleLowerCase().includes(query);
+    return tagOk && countryOk && searchOk;
   });
 }
 
 function renderFilters() {
   const tags = unique(members.flatMap((m) => m.expertise_tags || []));
-  const countries = unique(members.map((m) => m.country_code));
+  const countries = unique(members.map((m) => m.country_code).filter(Boolean));
 
   tagFilters.innerHTML = `<button class="chip ${activeTag ? "" : "active"}" data-tag="">all expertise</button>` +
     tags.map((t) => `<button class="chip ${activeTag === t ? "active" : ""}" data-tag="${t}">${TAG_LABELS[t] || t}</button>`).join("");
@@ -81,10 +93,12 @@ function renderDetails(member) {
     return;
   }
 
+  member = Object.fromEntries(Object.entries(member).map(([key, value]) => [key, typeof value === "string" ? escapeHTML(value) : value]));
   details.classList.remove("hidden");
   details.innerHTML = `
     <h3>${member.name}</h3>
-    <p>${member.institution || "Institution not set"} · ${member.country || "Unknown"}</p>
+    <p>${member.institution}${member.country ? " · " + member.country : ""}</p>
+    ${member.email ? `<p><strong>Work email:</strong> ${member.email}</p>` : ""}
     <p><strong>Expertise:</strong> ${member.expertise || "Not provided"}</p>
     <p><strong>Past work:</strong> ${member.past_works || "Not provided"}</p>
     <p><strong>Current interests:</strong> ${member.current_interests || "Not provided"}</p>
@@ -97,11 +111,20 @@ function renderCards(items) {
   for (const member of items) {
     const node = tpl.content.firstElementChild.cloneNode(true);
     node.dataset.id = member.id;
+    node.tabIndex = 0;
+    node.setAttribute("role", "button");
+    node.setAttribute("aria-expanded", String(selectedId === member.id));
+    node.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        node.click();
+      }
+    });
 
     node.querySelector(".badge").textContent = member.domain_badge || "?";
     node.querySelector(".name").textContent = member.name;
     node.querySelector(".institution").textContent = member.institution || "Institution not set";
-    node.querySelector(".meta").textContent = `${member.country_code || "UN"} · ${member.country || "Unknown"}`;
+    node.querySelector(".meta").textContent = member.country || "";
 
     const tagsEl = node.querySelector(".tags");
     (member.expertise_tags || []).forEach((tag) => {
@@ -117,6 +140,7 @@ function renderCards(items) {
     node.addEventListener("click", () => {
       selectedId = selectedId === member.id ? "" : member.id;
       render();
+      [...board.children].find(card => card.dataset.id === member.id)?.focus({preventScroll: true});
     });
 
     board.appendChild(node);
@@ -127,6 +151,8 @@ function render() {
   const items = filteredMembers();
   renderFilters();
   renderCards(items);
+  count.textContent = `${items.length} of ${members.length} members`;
+  if (!items.length) board.textContent = "No members match these filters.";
 
   const selected = items.find((m) => m.id === selectedId);
   renderDetails(selected);
@@ -134,11 +160,12 @@ function render() {
 
 async function init() {
   const response = await fetch("./data/members.json");
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
   const payload = await response.json();
   members = payload.members || [];
   render();
 }
 
 init().catch((err) => {
-  board.innerHTML = `<p>Failed to load members data: ${err.message}</p>`;
+  board.textContent = `Failed to load members data: ${err.message}`;
 });

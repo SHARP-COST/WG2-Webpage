@@ -23,11 +23,9 @@ git clone --depth 1 --branch "$SOURCE_REF" "$CLONE_FROM" "$TMP_DIR/source"
 SOURCE_COMMIT="$(git -C "$TMP_DIR/source" rev-parse HEAD)"
 echo "Using source commit: $SOURCE_COMMIT"
 
-WG2_SOURCE_MEMBERS="$TMP_DIR/source/members" python3 "$ROOT/scripts/build_site.py"
+python3 "$ROOT/scripts/sync_members.py" "$TMP_DIR/source/WG2.list"
+python3 "$ROOT/scripts/build_site.py"
+python3 "$ROOT/scripts/check_health.py"
 
-echo "Output checksums:"
-shasum -a 256 \
-  "$ROOT/data/members.yaml" \
-  "$ROOT/data/members.json" \
-  "$ROOT/site/data/members.yaml" \
-  "$ROOT/site/data/members.json"
+echo "Public snapshot checksum:"
+shasum -a 256 "$ROOT/data/members.yaml"
