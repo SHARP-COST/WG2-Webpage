@@ -99,9 +99,14 @@ function renderDetails(member) {
     <h3>${member.name}</h3>
     <p>${member.institution}${member.country ? " · " + member.country : ""}</p>
     ${member.email ? `<p><strong>Work email:</strong> ${member.email}</p>` : ""}
+    ${member.profile_prefill ? `<p class="prefill-note">Research prefill · awaiting member review. Sources checked ${escapeHTML(member.profile_prefill.researched_on)}.</p>` : ""}
     <p><strong>Expertise:</strong> ${member.expertise || "Not provided"}</p>
-    <p><strong>Past work:</strong> ${member.past_works || "Not provided"}</p>
-    <p><strong>Current interests:</strong> ${member.current_interests || "Not provided"}</p>
+    ${member.past_works ? `<p><strong>Past work:</strong> ${member.past_works}</p>` : ""}
+    ${member.current_interests ? `<p><strong>Current interests:</strong> ${member.current_interests}</p>` : ""}
+    ${member.research_topics ? `<p><strong>Research topics:</strong> ${member.research_topics}</p>` : ""}
+    ${(member.profile_sources || []).length ? `<p><strong>Sources:</strong> ${(member.profile_sources || []).filter(source => {
+      try { return new URL(source.url).protocol === "https:"; } catch { return false; }
+    }).map(source => `<a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.title)}</a>`).join(" · ")}</p>` : ""}
   `;
 }
 

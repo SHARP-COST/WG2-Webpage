@@ -1,5 +1,6 @@
 """Shared validation and privacy policy for public member data."""
 import re
+from urllib.parse import urlsplit
 from pathlib import Path
 import yaml
 ROOT = Path(__file__).resolve().parents[1]
@@ -33,6 +34,20 @@ def validate(payload):
         for field in ['expertise_tags', 'source_works']:
             if not isinstance(m[field], list):
                 raise ValueError(f'{field} must be a list')
+        for source in m.get('profile_sources', []):
+            url = urlsplit(source['url'])
+            if url.scheme != 'https' or not url.hostname or url.username or not source.get('title'):
+                raise ValueError('Profile sources require a titled HTTPS URL')
+        if m.get('profile_prefill'):
+            prefill = m['profile_prefill']
+            if (prefill.get('status') != 'awaiting-member-review'
+                    or not m.get('profile_sources')
+                    or not prefill.get('fields')
+                    or any(field not in {'expertise', 'research_topics', 'expertise_tags'}
+                           or not m.get(field) for field in prefill['fields'])
+                    or prefill.get('evidence_type') not in {'self-described', 'institutional', 'publication'}
+                    or not re.fullmatch(r'\d{4}-\d{2}-\d{2}', prefill.get('researched_on', ''))):
+                raise ValueError('Prefills require provenance and populated research fields')
         if m['email']:
             match = re.fullmatch(r'[^\s@]+ \(at\) ([a-z0-9.-]+\.[a-z]{2,})', m['email'])
             if not match or not work_domain(match[1]):

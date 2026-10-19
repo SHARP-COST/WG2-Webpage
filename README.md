@@ -9,7 +9,13 @@ Public directory of SHARP WG2 Hadron Spectroscopy members.
 The authoritative membership roster is `WG2.list` in the WG2-Hadron-Spectroscopy repository.
 `data/members.yaml` is this website's sanitized public snapshot, enriched with existing research profiles.
 Names, affiliations, and contacts are refreshed from the roster. Research descriptions, GitHub handles,
-and known countries are preserved for matching members. Missing research details and countries remain blank.
+and known countries are preserved for matching members. Research prefills cite public researcher profiles,
+institutional pages, theses, or publications and are marked **awaiting member review**. Sourced topics
+use `research_topics`, separate from members' existing `current_interests`. `profile_prefill` records
+the populated fields, evidence type, and research date; `profile_sources` holds the references.
+The roster importer preserves this enrichment. Unverified research details and countries remain blank.
+When a member confirms or replaces the prefill, update their text and remove `profile_prefill`;
+source links may be retained. Do not infer current interests from an old publication alone.
 
 - `site/`: static HTML, CSS, and JavaScript.
 - `data/members.yaml`: the only committed public member dataset.

@@ -41,6 +41,19 @@ class PrivacyTests(unittest.TestCase):
             self.assertEqual(imported[0]['institution'], 'New institution')
             self.assertEqual(imported[0]['email'], '')
             self.assertEqual(imported[0]['expertise'], expertise)
+            for field in ['research_topics', 'profile_prefill', 'profile_sources']:
+                self.assertEqual(imported[0].get(field), member.get(field))
+
+    def test_prefills_require_sources_and_safe_links(self):
+        payload = copy.deepcopy(load())
+        member = next(m for m in payload['members'] if m.get('profile_prefill'))
+        for url in ['javascript:alert(1)', 'https:///missing-host']:
+            member['profile_sources'][0]['url'] = url
+            with self.assertRaises(ValueError):
+                validate(payload)
+        member['profile_sources'] = []
+        with self.assertRaises(ValueError):
+            validate(payload)
 
 if __name__ == '__main__':
     unittest.main()
