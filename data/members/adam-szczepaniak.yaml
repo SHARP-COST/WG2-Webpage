@@ -11,6 +11,7 @@ expertise: Theoretical hadron physics and partial-wave analysis.
 current_interests: ''
 expertise_tags:
 - amplitude-analysis
+- exotics
 source_works: []
 research_topics: Hadron structure, confinement and the extraction of resonance properties
   from scattering data.
@@ -20,7 +21,6 @@ profile_prefill:
   fields:
   - expertise
   - research_topics
-  - expertise_tags
   evidence_type: institutional
 profile_sources:
 - title: Indiana University research programme

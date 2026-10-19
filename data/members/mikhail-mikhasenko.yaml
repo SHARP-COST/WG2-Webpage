@@ -11,9 +11,11 @@ expertise: Experimental hadron spectroscopy and data analysis at the interface o
   theory and experiment.
 current_interests: ''
 expertise_tags:
-- amplitude-analysis
+- spectroscopy
 - exotics
 - experiment
+- amplitude-analysis
+- machine-learning
 source_works: []
 research_topics: Exotic tetraquarks, pentaquarks, glueballs and hybrids, with LHCb
   and COMPASS analyses.
@@ -23,7 +25,6 @@ profile_prefill:
   fields:
   - expertise
   - research_topics
-  - expertise_tags
   evidence_type: institutional
 profile_sources:
 - title: Ruhr University Bochum research profile

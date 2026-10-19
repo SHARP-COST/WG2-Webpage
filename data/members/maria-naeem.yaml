@@ -9,7 +9,9 @@ domain_badge: ''
 past_works: ''
 expertise: Electroweak radiative corrections and polarized-particle decays.
 current_interests: ''
-expertise_tags: []
+expertise_tags:
+- spectroscopy
+- heavy-hadrons
 source_works: []
 research_topics: Doctoral research on first-order electroweak corrections to polarized
   W-boson decay.
