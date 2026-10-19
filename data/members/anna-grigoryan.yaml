@@ -1,0 +1,27 @@
+name: Anna Grigoryan
+institution: A I Alikhanyan National Science Laboratory
+email: ''
+id: annagrigoryan
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Experimental particle and nuclear physics; Monte Carlo simulation.
+current_interests: ''
+expertise_tags:
+- experiment
+source_works: []
+research_topics: Public profile lists particle detectors, physics simulation and high-energy
+  physics.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: Researcher's public profile
+  url: https://www.researchgate.net/profile/Anna-Grigoryan-10

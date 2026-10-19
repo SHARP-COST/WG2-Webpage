@@ -1,0 +1,27 @@
+name: Gevorg Karyan
+institution: A I Alikhanyan National Science Laboratory
+email: karyan.gevorg (at) yerphi.am
+id: gevorgkaryan
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Experimental particle physics and data processing in HERMES and Belle II.
+current_interests: ''
+expertise_tags:
+- experiment
+source_works: []
+research_topics: Belle II experimental research and computational methods for particle
+  physics.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: institutional
+profile_sources:
+- title: Alikhanyan Laboratory research biography (2023)
+  url: https://www.aanl.am/?lang=en&p=50&pni=38

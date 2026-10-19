@@ -1,0 +1,25 @@
+name: Maria Naeem
+institution: University of Tartu
+email: ''
+id: marianaeem
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Electroweak radiative corrections and polarized-particle decays.
+current_interests: ''
+expertise_tags: []
+source_works: []
+research_topics: Doctoral research on first-order electroweak corrections to polarized
+  W-boson decay.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  evidence_type: publication
+profile_sources:
+- title: University of Tartu thesis announcement (2026)
+  url: https://ut.ee/et/uritus/maria-naeem-kaitseb-doktoritood-first-order-electroweak-radiative-corrections-decay

@@ -1,0 +1,23 @@
+id: wallner
+name: Stefan Wallner
+institution: Max Planck Institut für Physik
+country_code: DE
+country: Germany
+email: swallner (at) mpp.mpg.de
+github: stefan-wallner
+domain_badge: A
+past_works: Light-meson spectroscopy at COMPASS (strange mesons, non-strange light
+  mesons, hybrid meson π(1600)) and Belle II (hadronic tau-lepton decays, B-meson
+  decays).
+expertise: Amplitude analysis, partial-wave analysis of multi-body final states.
+current_interests: Hadronic tau-lepton decays at Belle II.
+expertise_tags:
+- amplitude-analysis
+- exotics
+- experiment
+- light-hadrons
+source_works:
+- amplitude-analysis
+- exotics
+- experiment
+- light-hadrons

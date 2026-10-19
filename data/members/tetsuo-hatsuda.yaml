@@ -1,0 +1,27 @@
+name: Tetsuo Hatsuda
+institution: RIKEN
+email: ''
+id: tetsuohatsuda
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Lattice QCD and theoretical particle and nuclear physics.
+current_interests: ''
+expertise_tags:
+- lattice-qcd
+source_works: []
+research_topics: Published work covers hadron-hadron interactions, nuclear forces
+  and dense matter, including neutron-star equations of state.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: RIKEN publication record
+  url: https://ithems.riken.jp/en/publications/papers/search?key=hatsuda&opt=author_name

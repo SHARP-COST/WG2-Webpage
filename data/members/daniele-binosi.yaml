@@ -1,0 +1,27 @@
+name: Daniele Binosi
+institution: Fondazione Bruno Kessler
+email: binosi (at) ectstar.eu
+id: danielebinosi
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Gauge-field theory, symmetry breaking and Schwinger-Dyson methods.
+current_interests: ''
+expertise_tags:
+- dyson-schwinger
+source_works: []
+research_topics: Dynamical gluon mass generation using the pinch-technique background-field
+  framework.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: ECT* researcher's profile
+  url: https://www.ectstar.eu/people/detail/daniele-binosi/?publications_page=7

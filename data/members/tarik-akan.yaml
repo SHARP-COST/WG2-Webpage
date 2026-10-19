@@ -1,0 +1,24 @@
+id: akan
+name: Tarik Akan
+institution: Yozgat Bozok University
+country_code: TR
+country: Turkey
+email: tarik.akan (at) yobu.edu.tr
+github: tarikakan
+domain_badge: X
+past_works: hadron spectroscopy, with particular emphasis on heavy and heavy-light
+  hadrons, including conventional and exotic states.
+expertise: non-perturbative QCD methods, especially QCD sum rules, to study hadron
+  masses, couplings
+current_interests: combining numerical/Monte Carlo methods with machine learning techniques
+  to improve stability analyses and parameter extraction in hadron phenomenology.
+expertise_tags:
+- exotics
+- heavy-hadrons
+- machine-learning
+- qcd-sum-rules
+source_works:
+- exotics
+- heavy-hadrons
+- machine-learning
+- qcd-sum-rules

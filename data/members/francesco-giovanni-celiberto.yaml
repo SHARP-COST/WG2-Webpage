@@ -1,0 +1,28 @@
+name: Francesco Giovanni Celiberto
+institution: Univeridad de Alcalá
+email: francesco.celiberto (at) uah.es
+id: francescogiovanniceliberto
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: QCD phenomenology, resummation and hadron-production calculations.
+current_interests: ''
+expertise_tags:
+- heavy-hadrons
+- exotics
+source_works: []
+research_topics: Heavy-flavour fragmentation, quarkonium and exotic-hadron production
+  at colliders.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: University of Alcalá publication profile
+  url: https://pretransparencia.uah.es/es/estudios/profesor/Francesco-Giovanni-Celiberto/

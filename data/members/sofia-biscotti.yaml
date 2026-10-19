@@ -1,0 +1,27 @@
+name: Sofia Biscotti
+institution: Universita degli studi di Roma La Sapienza
+email: ''
+id: sofiabiscotti
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Digital holography and optical modelling of magneto-gravitational traps.
+current_interests: ''
+expertise_tags:
+- optics
+source_works: []
+research_topics: A 2026 preprint proposes reconstruction of microscopic particles
+  suspended in levitated diamagnetic droplets.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Digital holography preprint (2026)
+  url: https://assets-eu.researchsquare.com/files/rs-9702689/v1_covered_0600c293-5baf-4053-a360-86f98e7150c6.pdf

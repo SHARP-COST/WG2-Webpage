@@ -1,0 +1,28 @@
+name: Bianca Scavino
+institution: Uppsala University
+email: bianca.scavino (at) physics.uu.se
+id: biancascavino
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Experimental particle physics and charged-particle tracking at Belle II.
+current_interests: ''
+expertise_tags:
+- experiment
+- heavy-hadrons
+source_works: []
+research_topics: Particle reconstruction and charm-baryon studies within the Uppsala
+  Belle II programme.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: institutional
+profile_sources:
+- title: Uppsala Belle II research programme
+  url: https://www.uu.se/en/department/physics-and-astronomy/research/nuclear-physics/news/archive/2026-06-17-world-record-at-the-belle-ii-experiment

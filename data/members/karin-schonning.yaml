@@ -1,0 +1,28 @@
+name: Karin Schönning
+institution: Uppsala University
+email: karin.schonning (at) physics.uu.se
+id: karinschonning
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Experimental hyperon physics, spin observables and baryon structure.
+current_interests: ''
+expertise_tags:
+- experiment
+- cp-violation
+source_works: []
+research_topics: Hyperon production and decay as probes of electromagnetic structure,
+  flavour symmetry and CP violation.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Hyperon-antihyperon review (2023)
+  url: https://arxiv.org/abs/2302.13071

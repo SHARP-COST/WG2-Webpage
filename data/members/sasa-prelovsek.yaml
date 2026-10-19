@@ -1,0 +1,28 @@
+name: Saša Prelovšek
+institution: University of Ljubljana
+email: sasa.prelovsek (at) fmf.uni-lj.si
+id: sasaprelovsek
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Lattice quantum field theory and nonperturbative strong interactions.
+current_interests: ''
+expertise_tags:
+- lattice-qcd
+- exotics
+source_works: []
+research_topics: Conventional and exotic hadrons, including resonance properties extracted
+  from scattering.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: institutional
+profile_sources:
+- title: Jožef Stefan Institute research profile
+  url: https://squash.ijs.si/sasa-prelovsek-komelj/

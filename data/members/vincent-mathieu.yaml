@@ -1,0 +1,29 @@
+name: Vincent Mathieu
+institution: University of Barcelona
+email: vincent.mathieu (at) umons.ac.be
+id: vincentmathieu
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Hadron spectroscopy and reaction-amplitude phenomenology.
+current_interests: ''
+expertise_tags:
+- amplitude-analysis
+- exotics
+- machine-learning
+source_works: []
+research_topics: Published work spans meson photoproduction, three-body decays, exotic
+  hadrons and machine-learning applications.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: UCM publication record
+  url: https://produccioncientifica.ucm.es/investigadores/352119/publicaciones?lang=en

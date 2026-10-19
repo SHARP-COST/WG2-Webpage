@@ -5,8 +5,7 @@ import csv
 import io
 import unicodedata
 from pathlib import Path
-import yaml
-from member_data import ROOT, public_email, validate
+from member_data import ROOT, public_email, save, load
 
 def name_key(name):
     return ''.join(c for c in unicodedata.normalize('NFKD', name).casefold() if c.isalnum())
@@ -14,8 +13,7 @@ def name_key(name):
 ALIASES = {name_key('Felipe José Llanes-Estrada'): name_key('Felipe Llanes-Estrada')}
 
 def sync(source):
-    target = ROOT / 'data/members.yaml'
-    existing = yaml.safe_load(target.read_text())['members']
+    existing = load(ROOT)['members']
     by_name = {name_key(m['name']): m for m in existing}
     text = source.read_text(encoding='utf-8-sig').split('\n## Emails', 1)[0].strip()
     reader = csv.DictReader(io.StringIO(text))
@@ -37,8 +35,7 @@ def sync(source):
         members.append(m)
     members.sort(key=lambda m: m['name'].casefold())
     payload = {'members': members}
-    validate(payload)
-    target.write_text(yaml.safe_dump(payload, allow_unicode=True, sort_keys=False), encoding='utf-8')
+    save(payload, ROOT)
     print(f"Imported {len(members)} members; {sum(bool(m['email']) for m in members)} work contacts.")
 
 if __name__ == '__main__':

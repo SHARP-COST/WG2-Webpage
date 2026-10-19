@@ -1,0 +1,28 @@
+name: Valeriia Zhovkovska
+institution: University Of Warwick
+email: valeriia.zhovkovska (at) cern.ch
+id: valeriiazhovkovska
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Experimental heavy-flavour production and detector work at LHCb.
+current_interests: ''
+expertise_tags:
+- experiment
+- heavy-hadrons
+source_works: []
+research_topics: B-hadron fragmentation fractions, charmonium production, hadronisation
+  and future LHCb detector upgrades.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: CERN researcher's introduction (2026)
+  url: https://ep-news.web.cern.ch/new-staff-members-and-fellows-092026/

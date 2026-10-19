@@ -1,0 +1,27 @@
+name: Alfred Stadler
+institution: Universidade De Evora
+email: stadler (at) lip.pt
+id: alfredstadler
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Relativistic few-body methods and covariant quark models.
+current_interests: ''
+expertise_tags:
+- heavy-hadrons
+source_works: []
+research_topics: Published work covers heavy quarkonia, heavy-light mesons and covariant
+  descriptions of nuclear systems.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Researcher's CiênciaVitae publication record
+  url: https://www.cienciavitae.pt/en/D118-58B6-0186

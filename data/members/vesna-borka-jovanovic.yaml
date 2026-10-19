@@ -1,0 +1,27 @@
+name: Vesna Borka Jovanovic
+institution: Institute of Nuclear Sciences Vinca
+email: vborka (at) vinca.rs
+id: vesnaborkajovanovic
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Constituent-quark modelling and hyperfine interactions in hadron spectroscopy.
+current_interests: ''
+expertise_tags:
+- exotics
+- heavy-hadrons
+source_works: []
+research_topics: Published work includes single-charm tetraquark masses and mixing.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Single-charm tetraquark study (2007)
+  url: https://arxiv.org/abs/0711.2299

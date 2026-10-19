@@ -20,7 +20,7 @@ def main():
             raise ValueError(f'Unfiltered email address in {relative}')
     bundle = ROOT / 'dist/data/members.json'
     if not bundle.exists() or json.loads(bundle.read_text()) != payload:
-        raise ValueError('Build the site: deployed data must match members.yaml')
+        raise ValueError('Build the site: deployed data must match data/members/*.yaml')
     print(f"Checks passed for {len(payload['members'])} members.")
 
 if __name__ == '__main__':

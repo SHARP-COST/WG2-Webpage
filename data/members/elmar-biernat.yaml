@@ -1,0 +1,27 @@
+name: Elmar Biernat
+institution: Centro de Ciências e Tecnologias Nucleares
+email: elmarbiernat (at) ctn.tecnico.ulisboa.pt
+id: elmarbiernat
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Relativistic quark models and covariant spectator theory.
+current_interests: ''
+expertise_tags:
+- heavy-hadrons
+source_works: []
+research_topics: Published work studies confinement, quark mass functions and spontaneous
+  chiral-symmetry breaking in Minkowski space.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Covariant spectator theory study (2013)
+  url: https://arxiv.org/abs/1310.7545

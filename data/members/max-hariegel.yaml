@@ -1,0 +1,28 @@
+name: Max Hariegel
+institution: Rheinische Friedrich-wilhelms-universitat Bonn
+email: hariegel (at) hiskp.uni-bonn.de
+id: maxhariegel
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Partial-wave analysis of diffractive production.
+current_interests: ''
+expertise_tags:
+- amplitude-analysis
+- experiment
+source_works: []
+research_topics: Published conference work includes input-output tests of partial-wave
+  analysis software.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: 'DPG 2024 contribution: input-output studies'
+  url: https://www.dpg-verhandlungen.de/year/2024/conference/giessen/static/hk.pdf

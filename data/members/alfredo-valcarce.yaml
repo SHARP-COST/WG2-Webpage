@@ -1,0 +1,28 @@
+name: Alfredo Valcarce
+institution: Universidad de Salamanca
+email: valcarce (at) usal.es
+id: alfredovalcarce
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Constituent-quark models and few-body resonance calculations.
+current_interests: ''
+expertise_tags:
+- heavy-hadrons
+- exotics
+source_works: []
+research_topics: Published work examines resonance energies and widths, particularly
+  heavy-quark tetraquarks.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Resonances in the quark model (2024)
+  url: https://arxiv.org/abs/2406.13530

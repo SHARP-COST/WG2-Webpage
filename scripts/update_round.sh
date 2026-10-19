@@ -28,4 +28,4 @@ python3 "$ROOT/scripts/build_site.py"
 python3 "$ROOT/scripts/check_health.py"
 
 echo "Public snapshot checksum:"
-shasum -a 256 "$ROOT/data/members.yaml"
+shasum -a 256 "$ROOT/dist/data/members.json"

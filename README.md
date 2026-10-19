@@ -7,7 +7,7 @@ Public directory of SHARP WG2 Hadron Spectroscopy members.
 ## Data and architecture
 
 The authoritative membership roster is `WG2.list` in the WG2-Hadron-Spectroscopy repository.
-`data/members.yaml` is this website's sanitized public snapshot, enriched with existing research profiles.
+`data/members/` contains this website's sanitized public profiles, enriched with existing research profiles.
 Names, affiliations, and contacts are refreshed from the roster. Research descriptions, GitHub handles,
 and known countries are preserved for matching members. Research prefills cite public researcher profiles,
 institutional pages, theses, or publications and are marked **awaiting member review**. Sourced topics
@@ -19,13 +19,24 @@ source links may be retained. Do not infer current interests from an old publica
 
 - `site/`: static HTML, CSS, and JavaScript.
 - `site/assets/`: original SHARP logo and symbol from the Organization repository; the theme uses their navy, blue, green, and red palette.
-- `data/members.yaml`: the only committed public member dataset.
+- `data/members/`: one YAML file per person; the only committed public member dataset.
 - `scripts/sync_members.py`: explicit local import from the authoritative roster.
 - `scripts/build_site.py`: builds `dist/` from public data, without private repository access.
 - `scripts/check_health.py`: checks data, bundle consistency, and email privacy.
 - `tests/`: import and privacy regression checks.
 
 Generated JSON and `dist/` are not committed. The site fetches generated JSON at runtime.
+
+## Edit a profile
+
+Open the person's file in `data/members/`, for example `alessandro-pilloni.yaml`.
+Each file contains one member mapping, without a top-level `members:` list.
+Edit research descriptions, tags, and source links there; keep the existing `id` stable.
+Names, affiliations, and contacts are managed through the authoritative `WG2.list` roster.
+The importer keeps existing filenames stable, creates name-based filenames for new members,
+and deletes profiles for people removed from the roster. The build checks uniqueness and
+privacy across all files, sorts by name, and generates one `dist/data/members.json`.
+There is no combined YAML file to maintain.
 
 ## Update members
 
@@ -40,7 +51,7 @@ python -m unittest discover -s tests
 ```
 
 The importer reads only the roster above `## Emails`. It updates roster fields, adds new members,
-and removes people absent from the roster. Review changes to `data/members.yaml` before committing.
+and removes people absent from the roster. Review changes to `data/members/` before committing.
 For an import from a clean source checkout, use `bash scripts/update_round.sh [source-repository] [branch]`.
 
 ## Contact privacy

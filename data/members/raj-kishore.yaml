@@ -1,0 +1,27 @@
+name: RAJ KISHORE
+institution: University of the Basque Country
+email: ''
+id: rajkishore
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: QCD phenomenology and transverse-momentum-dependent parton distributions.
+current_interests: ''
+expertise_tags:
+- heavy-hadrons
+source_works: []
+research_topics: Published work studies TMD evolution and azimuthal asymmetries in
+  J/psi plus jet production at the Electron-Ion Collider.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: TMD evolution study (2025)
+  url: https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.014003

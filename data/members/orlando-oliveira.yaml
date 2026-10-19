@@ -1,0 +1,18 @@
+id: oliveira
+name: Orlando Oliveira
+institution: Universidade de Coimbra
+country_code: PT
+country: Portugal
+email: orlando (at) uc.pt
+github: ''
+domain_badge: D
+past_works: Landau gauge for lattice QCD, gluon propagator, Gribov copies.
+expertise: non-perturbative approaches to QFT
+current_interests: investigation of fundamental Green functions using lattice QCD
+  methods.
+expertise_tags:
+- dyson-schwinger
+- lattice-qcd
+source_works:
+- dyson-schwinger
+- lattice-qcd

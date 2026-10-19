@@ -1,0 +1,29 @@
+name: Fernando Romero-Lopez
+institution: University of Bern
+email: fernando.romero-lopez (at) unibe.ch
+id: fernandoromerolopez
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Lattice QCD and effective field theory for hadronic interactions.
+current_interests: ''
+expertise_tags:
+- lattice-qcd
+- effective-field-theory
+- machine-learning
+source_works: []
+research_topics: Multi-hadron systems, resonance extraction and flow-based machine
+  learning for lattice field theory.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: Researcher's seminar biography (2023)
+  url: https://sites.uw.edu/risingresearchers/fernando-photo/

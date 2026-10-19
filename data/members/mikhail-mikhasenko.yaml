@@ -1,0 +1,30 @@
+name: Mikhail Mikhasenko
+institution: Ruhr-universitaet Bochum
+email: mikhail.mikhasenko (at) rub.de
+id: mikhailmikhasenko
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Experimental hadron spectroscopy and data analysis at the interface of
+  theory and experiment.
+current_interests: ''
+expertise_tags:
+- amplitude-analysis
+- exotics
+- experiment
+source_works: []
+research_topics: Exotic tetraquarks, pentaquarks, glueballs and hybrids, with LHCb
+  and COMPASS analyses.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: institutional
+profile_sources:
+- title: Ruhr University Bochum research profile
+  url: https://www.physik.ruhr-uni-bochum.de/en/Professuren/prof-dr-mikhail-mikhasenko/

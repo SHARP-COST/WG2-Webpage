@@ -1,0 +1,31 @@
+id: torcato
+name: André Torcato
+institution: Laboratorio De Instrumentacao E Fisica Experimental De Particulas Lip
+country_code: PT
+country: Portugal
+email: atorcato (at) lip.pt
+github: ''
+domain_badge: D
+past_works: ''
+expertise: Functional QCD calculations of baryon spectra using quark-diquark Bethe-Salpeter
+  equations.
+current_interests: I'm interested in studying baryons using functional methods. Specifically,
+  solving the baryon's Bethe-Salpeter equation using a quark-diquark model to simplify
+  it to a 2-body system. With this, not only is it possible to calculate baryon masses,
+  but diquark correlations as well. My focus is to predict the diquark correlations
+  of baryons with quarks of different flavors.
+expertise_tags:
+- dyson-schwinger
+- heavy-hadrons
+source_works:
+- dyson-schwinger
+- heavy-hadrons
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  evidence_type: publication
+profile_sources:
+- title: Quark-diquark functional approach poster (2025)
+  url: https://fisica.tecnico.ulisboa.pt/physfront25/files/AndreTorcato.pdf

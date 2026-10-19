@@ -1,5 +1,6 @@
 """Shared validation and privacy policy for public member data."""
 import re
+import unicodedata
 from urllib.parse import urlsplit
 from pathlib import Path
 import yaml
@@ -57,7 +58,43 @@ def validate(payload):
         raise ValueError('Unfiltered email address found in public data')
     return members
 
-def load():
-    payload = yaml.safe_load((ROOT / 'data/members.yaml').read_text())
+def profile_files(root):
+    return sorted((root / 'data/members').glob('*.yaml'))
+
+def load(root=None):
+    root = ROOT if root is None else root
+    members = []
+    for path in profile_files(root):
+        member = yaml.safe_load(path.read_text(encoding='utf-8'))
+        if not isinstance(member, dict):
+            raise ValueError(f'Expected one member mapping in {path.name}')
+        members.append(member)
+    payload = {'members': sorted(members, key=lambda m: m.get('name', '').casefold())}
     validate(payload)
     return payload
+
+def save(payload, root=None):
+    """Validate the whole roster before updating individual public profiles."""
+    root = ROOT if root is None else root
+    validate(payload)
+    directory = root / 'data/members'
+    old_paths = profile_files(root)
+    if old_paths:
+        load(root)  # Refuse to overwrite an invalid existing directory.
+    by_id = {yaml.safe_load(p.read_text(encoding='utf-8'))['id']: p for p in old_paths}
+    planned = {}
+    for member in payload['members']:
+        ascii_name = unicodedata.normalize('NFKD', member['name']).encode('ascii', 'ignore').decode()
+        slug = re.sub(r'[^a-z0-9]+', '-', ascii_name.lower()).strip('-')
+        if not slug:
+            raise ValueError('Member name needs a filename slug')
+        path = by_id.get(member['id'], directory / f'{slug}.yaml')
+        if path in planned:
+            raise ValueError(f'Duplicate profile filename: {path.name}')
+        planned[path] = yaml.safe_dump(member, allow_unicode=True, sort_keys=False)
+    directory.mkdir(parents=True, exist_ok=True)
+    for path, text in planned.items():
+        if not path.exists() or path.read_text(encoding='utf-8') != text:
+            path.write_text(text, encoding='utf-8')
+    for path in set(old_paths) - planned.keys():
+        path.unlink()

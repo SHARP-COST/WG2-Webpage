@@ -1,0 +1,28 @@
+name: Glòria Montaña Faiget
+institution: Universitat de Barcelona
+email: gmontana (at) fqa.ub.edu
+id: gloriamontanafaiget
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Theoretical and computational hadron spectroscopy.
+current_interests: ''
+expertise_tags:
+- exotics
+- heavy-hadrons
+source_works: []
+research_topics: Exotic hadrons beyond the conventional quark model and connecting
+  theoretical predictions with experimental data.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: Researcher's homepage
+  url: https://sites.google.com/view/gloriamontana/

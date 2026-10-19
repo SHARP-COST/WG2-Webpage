@@ -1,0 +1,27 @@
+name: Marco Pappagallo
+institution: Università degli Studi di Bari Aldo Moro
+email: marco.pappagallo (at) cern.ch
+id: marcopappagallo
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Experimental heavy-hadron spectroscopy.
+current_interests: ''
+expertise_tags:
+- experiment
+- heavy-hadrons
+source_works: []
+research_topics: Published presentations cover heavy-meson spectroscopy and LHCb measurements.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Heavy meson spectroscopy presentation (2020)
+  url: https://indico.fnal.gov/event/45310/contributions/196513/attachments/134902/167085/SnowMass_23092020_Pappagallo.pdf

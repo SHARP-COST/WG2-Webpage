@@ -1,0 +1,29 @@
+name: María Gómez-Rocha
+institution: Universidad de Granada
+email: mgomezrocha (at) ugr.es
+id: mariagomezrocha
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Continuum QCD, light-front Hamiltonians and the renormalization group procedure
+  for effective particles.
+current_interests: ''
+expertise_tags:
+- dyson-schwinger
+- heavy-hadrons
+source_works: []
+research_topics: Confinement, dynamical mass generation and hadron bound states; Dyson-Schwinger
+  and Bethe-Salpeter approaches.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: Researcher's interests page
+  url: https://sites.google.com/view/mariagomezrocha/research-interests

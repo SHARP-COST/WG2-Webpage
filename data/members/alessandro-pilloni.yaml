@@ -1,0 +1,29 @@
+name: Alessandro Pilloni
+institution: Università degli Studi di Messina
+email: alessandro.pilloni (at) unime.it
+id: alessandropilloni
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Low-energy QCD phenomenology and amplitude modelling for exotic hadrons.
+current_interests: ''
+expertise_tags:
+- amplitude-analysis
+- exotics
+- machine-learning
+source_works: []
+research_topics: Hadron spectroscopy, machine-learning applications to nuclear physics
+  and precision Standard Model tests.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: Researcher's homepage
+  url: https://www.pillaus.it/

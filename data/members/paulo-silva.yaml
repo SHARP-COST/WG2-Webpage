@@ -1,0 +1,27 @@
+name: Paulo Silva
+institution: Universidade de Coimbra
+email: psilva (at) uc.pt
+id: paulosilva
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Lattice QCD, gauge fixing and high-performance numerical calculations.
+current_interests: ''
+expertise_tags:
+- lattice-qcd
+source_works: []
+research_topics: Infrared QCD Green functions, confinement, dynamical-fermion simulations
+  and effective models using lattice input.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: University of Coimbra research profile
+  url: https://cfisuc.fis.uc.pt/people.php?oid=78185

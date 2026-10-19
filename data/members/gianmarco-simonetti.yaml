@@ -1,0 +1,27 @@
+name: Gianmarco Simonetti
+institution: The University of Edinburgh
+email: s2820577 (at) ed.ac.uk
+id: gianmarcosimonetti
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Numerical lattice gauge theory and domain-wall fermions.
+current_interests: ''
+expertise_tags:
+- lattice-qcd
+source_works: []
+research_topics: Published work studies Sp(4) meson spectra and continuum extrapolations
+  relevant to composite Higgs and dark-matter models.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Symplectic lattice gauge theories (2026)
+  url: https://arxiv.org/abs/2609.19930

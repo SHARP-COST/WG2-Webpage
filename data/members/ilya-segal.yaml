@@ -1,0 +1,29 @@
+name: Ilya Segal
+institution: Ruhr-universitaet Bochum
+email: ilya.segal (at) cern.ch
+id: ilyasegal
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Angular analysis of two-vector-meson systems and Julia-based LHCb analysis.
+current_interests: ''
+expertise_tags:
+- amplitude-analysis
+- exotics
+- experiment
+source_works: []
+research_topics: All-charm tetraquark candidates, phi-meson pairs, glueball candidates
+  and charmonium decays.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: JuliaCon 2026 speaker biography
+  url: https://pretalx.com/juliacon-2026/speaker/JTBPLX/

@@ -1,0 +1,27 @@
+name: Dusko Borka
+institution: Vinca Institute of Nuclear Sciences
+email: dusborka (at) vinca.rs
+id: duskoborka
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Constituent-quark models and hyperfine interactions in mesons and baryons.
+current_interests: ''
+expertise_tags:
+- heavy-hadrons
+source_works: []
+research_topics: Published work includes extraction of constituent-quark masses from
+  light and open-bottom hadrons.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Constituent-quark mass study (2014)
+  url: https://arxiv.org/abs/1405.7177

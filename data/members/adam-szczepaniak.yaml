@@ -1,0 +1,27 @@
+name: Adam Szczepaniak
+institution: Indiana University Bloomington
+email: aszczepa (at) iu.edu
+id: adamszczepaniak
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Theoretical hadron physics and partial-wave analysis.
+current_interests: ''
+expertise_tags:
+- amplitude-analysis
+source_works: []
+research_topics: Hadron structure, confinement and the extraction of resonance properties
+  from scattering data.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: institutional
+profile_sources:
+- title: Indiana University research programme
+  url: https://ceem.indiana.edu/research/nuclear-theory-center/index.html

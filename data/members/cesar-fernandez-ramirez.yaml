@@ -1,0 +1,30 @@
+name: Cesar Fernandez Ramirez
+institution: Universidad Nacional de Educación a Distancia
+email: cefera (at) ccia.uned.es
+id: cesarfernandezramirez
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Hadron spectroscopy, amplitude analysis and theoretical and computational
+  methods for strong interactions.
+current_interests: ''
+expertise_tags:
+- amplitude-analysis
+- exotics
+- machine-learning
+source_works: []
+research_topics: Exotic QCD states, colour confinement, hadron structure and machine
+  learning for amplitude analysis.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: UNED research profile
+  url: https://www.uned.es/universidad/docentes/ciencias/cesar-fernandez-ramirez.html

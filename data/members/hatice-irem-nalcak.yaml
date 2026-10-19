@@ -1,0 +1,27 @@
+name: Hatice Irem Nalcak
+institution: Ankara Universitesi
+email: ''
+id: haticeiremnalcak
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Accelerator instrumentation and control systems.
+current_interests: ''
+expertise_tags:
+- accelerator-physics
+source_works: []
+research_topics: Published work describes upgrades and future planning for the TARLA
+  accelerator control system.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: TARLA control system conference abstract (2024)
+  url: https://indico.cern.ch/event/1434046/contributions/contributions.pdf

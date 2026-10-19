@@ -1,0 +1,27 @@
+name: Oleg Denisov
+institution: Istituto Nazionale Di Fisica Nucleare
+email: oleg.denisov (at) cern.ch
+id: olegdenisov
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Experimental hadron physics with COMPASS and AMBER.
+current_interests: ''
+expertise_tags:
+- experiment
+source_works: []
+research_topics: Conference contributions discuss the AMBER programme, meson structure,
+  proton spin and the emergence of hadron mass.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: COMPASS++/AMBER presentation (2020)
+  url: https://indico.bnl.gov/event/8315/contributions/36991/attachments/28488/43884/Oleg_CFNS.pdf

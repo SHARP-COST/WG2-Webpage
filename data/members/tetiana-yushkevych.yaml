@@ -1,0 +1,25 @@
+name: Tetiana Yushkevych
+institution: Joint Research Centre - Karlsruhe site
+email: ''
+id: tetianayushkevych
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Hadronic phenomenology and scientific software for scattering measurements.
+current_interests: ''
+expertise_tags: []
+source_works: []
+research_topics: Published fellowship work develops tools connecting semi-inclusive
+  deep-inelastic scattering data to appropriate theoretical descriptions.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  evidence_type: publication
+profile_sources:
+- title: IRIS-HEP fellowship project (2022)
+  url: https://iris-hep.org/fellows/Tetiana-Yushkevych.html

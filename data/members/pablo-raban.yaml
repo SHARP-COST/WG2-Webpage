@@ -1,0 +1,19 @@
+id: raban
+name: Pablo Rabán
+institution: Universidad Complutense De Madrid
+country_code: ES
+country: Spain
+email: praban (at) ucm.es
+github: ''
+domain_badge: A
+past_works: Dispersive analysis of pion-pion scattering and resonance determination.
+expertise: Amplitude analysis, dispersion relations, analytic continuations.
+current_interests: Flavor symmetry, pion-nucleon spectroscopy, Lattice QCD.
+expertise_tags:
+- amplitude-analysis
+- lattice-qcd
+- light-hadrons
+source_works:
+- amplitude-analysis
+- lattice-qcd
+- light-hadrons

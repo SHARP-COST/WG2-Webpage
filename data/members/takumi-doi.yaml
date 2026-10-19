@@ -1,0 +1,27 @@
+name: Takumi Doi
+institution: RIKEN
+email: doi (at) ribf.riken.jp
+id: takumidoi
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Computational particle and nuclear physics using lattice QCD.
+current_interests: ''
+expertise_tags:
+- lattice-qcd
+source_works: []
+research_topics: First-principles nuclear forces and connections from quarks to nuclei
+  and astrophysics.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: RIKEN researcher profile
+  url: https://ithems.riken.jp/en/members/takumi-doi

@@ -1,0 +1,27 @@
+name: Kieran Twaites
+institution: University of Oxford
+email: kieran.twaites (at) physics.ox.ac.uk
+id: kierantwaites
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Lattice field theory and strongly coupled quantum field theories.
+current_interests: ''
+expertise_tags:
+- lattice-qcd
+source_works: []
+research_topics: High-spin glueball masses, quark confinement and worldsheet axions
+  in gauge theories.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: self-described
+profile_sources:
+- title: Oxford research profile
+  url: https://www.physics.ox.ac.uk/our-people/twaites

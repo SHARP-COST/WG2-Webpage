@@ -1,0 +1,27 @@
+name: Nihal Buyukcizmeci
+institution: Selcuk Universitesi
+email: nihal (at) selcuk.edu.tr
+id: nihalbuyukcizmeci
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Statistical and transport modelling of nuclear reactions and hypernuclei.
+current_interests: ''
+expertise_tags:
+- nuclear-reactions
+source_works: []
+research_topics: Nuclear fragmentation, strange-nucleus production and properties
+  of hypernuclear matter.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Selcuk University publication profile
+  url: https://avid.selcuk.edu.tr/akademisyen-profil/2236

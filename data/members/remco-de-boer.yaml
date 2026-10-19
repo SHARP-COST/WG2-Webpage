@@ -1,0 +1,28 @@
+name: Remco de Boer
+institution: Ruhr-universitaet Bochum
+email: remco.deboer (at) rub.de
+id: remcodeboer
+country_code: ''
+country: ''
+github: ''
+domain_badge: ''
+past_works: ''
+expertise: Symbolic amplitude models and high-performance computing for partial-wave
+  analysis.
+current_interests: ''
+expertise_tags:
+- amplitude-analysis
+source_works: []
+research_topics: Spin-aligned baryon amplitudes and efficient, reusable software for
+  hadron spectroscopy.
+profile_prefill:
+  status: awaiting-member-review
+  researched_on: '2026-10-19'
+  fields:
+  - expertise
+  - research_topics
+  - expertise_tags
+  evidence_type: publication
+profile_sources:
+- title: Aligning Baryons doctoral thesis (2025)
+  url: https://redeboer.github.io/phd-thesis/
