@@ -19,6 +19,7 @@ source links may be retained. Do not infer current interests from an old publica
 
 - `site/`: static HTML, CSS, and JavaScript.
 - `site/assets/`: original SHARP logo and symbol from the Organization repository; the theme uses their navy, blue, green, and red palette.
+- The header's COST logo comes from [COST's official website](https://www.cost.eu/themes/janes/assets/images/logo-full-color.svg) and links to [Action CA24159](https://www.cost.eu/actions/CA24159/).
 - `data/members/`: one YAML file per person; the only committed public member dataset.
 - `scripts/sync_members.py`: explicit local import from the authoritative roster.
 - `scripts/build_site.py`: builds `dist/` from public data, without private repository access.

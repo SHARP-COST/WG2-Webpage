@@ -21,6 +21,12 @@ body {
 .hero { max-width: 1100px; margin: 0 auto; padding: 1.5rem 1.5rem 1.8rem; position: relative; background: var(--paper); border-bottom: 1px solid var(--line); }
 .hero-glow { position: absolute; inset: 0 0 auto; height: 4px; background: linear-gradient(90deg, var(--brand-red) 0% 33.33%, var(--accent-b) 33.33% 66.66%, var(--accent-a) 66.66%); }
 .brand-logo { display: block; width: min(400px, 100%); height: auto; margin: 0 0 .75rem; }
+.header-brands { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; }
+.header-brands .brand-logo { width: min(400px, 68%); }
+.cost-link { display: block; flex: 0 1 120px; margin-top: 1rem; padding: .25rem; border-radius: 4px; }
+.cost-link img { display: block; width: 100%; height: auto; }
+.cost-link:hover { opacity: .8; }
+.cost-link:focus-visible { outline: 3px solid var(--accent-a); outline-offset: 4px; }
 .eyebrow { color: var(--accent-a); font: 500 .8rem/1.5 "IBM Plex Mono", monospace; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 .4rem; }
 .hero h1 { margin: 0 0 1rem; font-size: clamp(1.8rem, 5vw, 2.65rem); line-height: 1.12; }
 .lead { margin: 0.65rem 0; line-height: 1.45; font-size: 1.01rem; }
