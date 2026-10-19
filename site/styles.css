@@ -131,3 +131,7 @@ main { max-width: 1100px; margin: 0 auto; padding: 0.2rem 1rem 2rem; }
 [data-theme="dark"] .meta { color: var(--muted); }
 [data-theme="dark"] .details { background: #201d2d; border: 1px solid var(--line); }
 #member-search { color: var(--ink); }
+
+.details-actions { display: flex; gap: .4rem; flex-shrink: 0; }
+.details .profile-close { color: #91d7ff; border-color: #69647d; }
+.details .profile-close:hover { background: #37314f; color: white; }

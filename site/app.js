@@ -113,7 +113,10 @@ function renderDetails(member) {
   details.innerHTML = `
     <div class="details-heading">
       <h3>${member.name}</h3>
+      <div class="details-actions">
       ${profileUrl ? `<a class="icon-button profile-edit" href="${escapeHTML(profileUrl)}" target="_blank" rel="noopener noreferrer" aria-label="View YAML profile for ${member.name} on GitHub" title="Edit profile on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m16 3 5 5-12 12-6 1 1-6Z M14 5l5 5"/></svg></a>` : ""}
+      <button class="icon-button profile-close" type="button" aria-label="Close member details" title="Close"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12 M18 6 6 18"/></svg></button>
+      </div>
     </div>
     <p>${member.institution}${member.country ? " · " + member.country : ""}</p>
     ${member.email ? `<p><strong>Work email:</strong> ${member.email}</p>` : ""}
@@ -126,6 +129,12 @@ function renderDetails(member) {
       try { return new URL(source.url).protocol === "https:"; } catch { return false; }
     }).map(source => `<a href="${escapeHTML(source.url)}" target="_blank" rel="noopener noreferrer">${escapeHTML(source.title)}</a>`).join(" · ")}</p>` : ""}
   `;
+  details.querySelector(".profile-close").addEventListener("click", () => {
+    const previousId = selectedId;
+    selectedId = "";
+    render();
+    [...board.children].find(card => card.dataset.id === previousId)?.focus({preventScroll: true});
+  });
 }
 
 function renderCards(items) {
