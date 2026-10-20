@@ -1,5 +1,5 @@
 name: Christopher Thomas
-institution: The Chancellor Masters And Scholars Of The University Of Cambridge
+institution: University Of Cambridge
 email: c.e.thomas (at) damtp.cam.ac.uk
 id: christopherthomas
 country_code: ''
@@ -12,17 +12,15 @@ current_interests: ''
 expertise_tags:
 - lattice-qcd
 - heavy-hadrons
+- exotics
 source_works: []
-research_topics: Hadron spectroscopy and properties from lattice QCD, including coupled-channel
-  scattering.
+research_topics: Spectroscopy, scattering and properties of hadrons from lattice QCD.
 profile_prefill:
   status: awaiting-member-review
   researched_on: '2026-10-19'
   fields:
   - expertise
-  - research_topics
-  - expertise_tags
   evidence_type: institutional
 profile_sources:
-- title: University of Cambridge research profile
-  url: https://www.maths.cam.ac.uk/person/cet34
+- title: University of Cambridge profile
+  url: https://www.damtp.cam.ac.uk/person/cet34

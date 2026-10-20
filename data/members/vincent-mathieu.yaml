@@ -25,5 +25,5 @@ profile_prefill:
   - expertise_tags
   evidence_type: publication
 profile_sources:
-- title: UCM publication record
-  url: https://produccioncientifica.ucm.es/investigadores/352119/publicaciones?lang=en
+- title: INSPIRE-HEP publication record
+  url: https://inspirehep.net/literature?sort=mostrecent&size=25&page=1&q=a%20mathieu%2C%20v.&ui-citation-summary=true

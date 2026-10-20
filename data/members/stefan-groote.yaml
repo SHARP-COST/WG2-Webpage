@@ -8,11 +8,13 @@ github: ''
 domain_badge: E
 past_works: topological tensor invariants and current algebra approach for nonleptonic
   two-body decays of single and double charm baryons.
-expertise: Heavy Quark Effective Theory (HQET), current algebra approach,
+expertise: Heavy Quark Effective Theory (HQET), current algebra approach, Dyson-Schwinger
+  equations.
 current_interests: baryonic bounded states, CP violation in baryonic decays
 expertise_tags:
 - effective-field-theory
 - heavy-hadrons
+- dyson-schwinger
 source_works:
 - effective-field-theory
 - heavy-hadrons
